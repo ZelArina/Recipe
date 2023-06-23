@@ -11,17 +11,21 @@ body {
 }
 .header{
     width: 30%;
+    padding-left: 2%;
     overflow: hidden;
 }
 .header_logo{
     width: 50%;
     height: 100%;
     object-fit: cover;
-    padding: 0%;
     margin: 0%;
 }
-.tabcontainer{
-    width: 30%;
+.container{
+    width: 100%;
+    padding: 1% 3% 3% 3%;
+}
+.content{
+    width: 50%;
 }
 .box{
     border-radius: 50%;
@@ -45,4 +49,13 @@ img{
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.dishes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dish_name{
+    padding:10px;
 }
