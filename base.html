@@ -3,139 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Recipes</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header class="header">
         <div class="header_logo">
             <img src="img/logo.png" alt="logotip">
         </div>
-        <div class="preview">
-            <p>Тут вы сможете найти рецепты простых блюд на каждый день</p>
-        </div>
+            <p class="preview">Тут вы сможете найти рецепты простых блюд на каждый день</p>
     </header>
-    <div class="container">
+
+    <div class="main">
+
         <div class="tabheader">
-            <h3>Выберите тип блюда</h3>
-            <div class="tabheader_items">
-                <div class="tabheader_item">Завтрак</div>
-                <div class="tabheader_item">Десерт</div>
-            </div>
+
+            <h2>Выберите тип блюда</h2>
+
+            <ul class="tabheader_items">
+                <li>%тип блюда%</li>
+            </ul>
+
         </div>
-            <div class="tabcontainer">
-                <div class="tabheader">
-                    <h2>Выберите блюдo</h2>
-                    <div class="dishes">
-                        <div class="dish_name">
-                            <h3>Шарлотка</h3>
-                            <div class = box>
-                                <img src="img/sharlotka.jpg" alt="sharlotka">
-                            </div>
-                        </div>
-                        <div class="dish_name">
-                            <h3>Панкейки</h3>
-                            <div class = box>
-                                <img src="img/pancake.jpg" alt="pancake">
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="tabheader">
-                    <h2>Выберите блюдo</h2>
-                    <div class="dishes">
-                        <div class="dish_name">
-                            <h3>Блины</h3>
-                            <div class = box>
-                                <img src="img/crips.jpg" alt="crips">
-                            </div>
-                        </div>
-                        <div class="dish_name">
-                            <h3>Сырники</h3>
-                            <div class = box>
-                                <img src="img/syrniki.jpg" alt="syrniki">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="tabcontent_desert">
-                        <div class="name">
-                            <h1>Шарлотка</h1>
-                        </div>
-                        <div class="grocery">
-                            <h3>Продукты</h3>
-                            <ul>
-                                <li>Яблоки (желательно кислые) - 500-600 г</li>
-                                <li>Сахар - 160 г</li>
-                                <li>Мука пшеничная - 160 г</li>
-                                <li>Яйца - 4 больших или 5 маленьких</li>
-                                <li>Соль - 1 щепотка</li>
-                            </ul>
-                        </div>
-                        <div class="video_tutorial">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ewv1eRtElG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tabcontent_desert">
-                        <div class="name">
-                            <h1>Панкейки</h1>
-                        </div>
-                        <div class="grocery">
-                            <h3>Продукты</h3>
-                            <ul>
-                                <li>Кефир - 350 мл</li>
-                                <li>Сахар -1 ст. ложка</li>
-                                <li>Мука - 1,5 стакана</li>
-                                <li>Яйца - 3 шт</li>
-                                <li>Соль - 1 щепотка</li>
-                                <li>Разрыхлитель - 1 ч. ложка</li>
-                                <li>Масло сливочное растопленное - 3 ст. ложки</li>
-                            </ul>
-                        </div>
-                        <div class="video_tutorial">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/C5M_FsRPqpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="container">
+
+                <div class="dishes">
+
+                    <div class="dish_name">
+                        <h3>Шарлотка</h3>
+                        <div class = dishPic>
+                            <img src="img/sharlotka.jpg" alt="sharlotka">
                         </div>
                     </div>
 
-                    <div class="tabcontent_breakfast">
-                        <div class="name">
-                            <h1>Блины</h1>
+                    <div class="dish_name">
+                        <h3>Панкейки</h3>
+                        <div class = dishPic>
+                            <img src="img/pancake.jpg" alt="pancake">
                         </div>
-                        <div class="grocery">
-                            <h3>Продукты</h3>
-                            <ul>
-                                <li>Молоко - 1 л</li>
-                                <li>Яйца - 4 шт</li>
-                                <li>Мука - 400 г</li>
-                                <li>Соль - 1 ч. ложка</li>
-                                <li>Сахар - 1 ст. ложка</li>
-                                <li>Масло сливочное, растопленное - 20 г</li>
-                            </ul>
-                        </div>
-                        <div class="video_tutorial">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/E_cohB81wL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tabcontent_breakfast">
-                        <div class="name">
-                            <h1>Сырники</h1>
-                        </div>
-                        <div class="grocery">
-                            <h3>Продукты</h3>
-                            <ul>
-                                <li>Творог жирный - 500 г</li>
-                                <li>Яйца - 1 шт</li>
-                                <li>Мука - 3 ст. ложки + 2 ст. ложки (для панировки)</li>
-                                <li>Соль - 1 щепотка</li>
-                                <li>Сахар - 2 ст. ложка</li>
-                            </ul>
-                        </div>
-                        <div class="video_tutorial">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qg4D7NFtTeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                    </div> 
+
                 </div>
+           
+            <div class="content">
+
+                <div class="tabcontent_dish">
+                    <div class="name">
+                        <h1>Шарлотка</h1>
+                    </div>
+                    <div class="grocery">
+                        <h3>Продукты</h3>
+                        <ul>
+                            <li>Яблоки (желательно кислые) - 500-600 г</li>
+                            <li>Сахар - 160 г</li>
+                            <li>Мука пшеничная - 160 г</li>
+                            <li>Яйца - 4 больших или 5 маленьких</li>
+                            <li>Соль - 1 щепотка</li>
+                        </ul>
+                    </div>
+                    <div class="video_tutorial">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ewv1eRtElG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div class="tabcontent_dish">
+                    
+                    <div class="name">
+                        <h1>Панкейки</h1>
+                    </div>
+                    <div class="grocery">
+                        <h3>Продукты</h3>
+                        <ul>
+                            <li>Кефир - 350 мл</li>
+                            <li>Сахар -1 ст. ложка</li>
+                            <li>Мука - 1,5 стакана</li>
+                            <li>Яйца - 3 шт</li>
+                            <li>Соль - 1 щепотка</li>
+                            <li>Разрыхлитель - 1 ч. ложка</li>
+                            <li>Масло сливочное растопленное - 3 ст. ложки</li>
+                        </ul>
+                    </div>
+                    <div class="video_tutorial">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/C5M_FsRPqpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
             </div>
+        </div>
     </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
