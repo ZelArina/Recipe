@@ -3,6 +3,7 @@ body, html {
 }
 body {
     font-family: Roboto, sans-serif;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     line-height: 1;
     background-color: #FFEFD5;
@@ -38,17 +39,7 @@ body {
 .content{
     width: 50%;
 }
-.dishPic{
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-}
-img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
+
 .video_tutorial{
     position: relative;
     padding-bottom: 56.25%;
@@ -63,10 +54,38 @@ img{
 }
 
 .dishes{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    cursor: pointer;
 }
 .dish_name{
-    padding:10px;
+    display: grid;
+    width: 160px;
+    grid-template-rows: 100px auto;
+    grid-template-columns: auto;
+    justify-items: center;
+
+}
+.dish_name > h3{
+    overflow-wrap: normal;
+}
+.dishPic{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.meal_type{
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 1.5;
+    cursor: pointer;
 }
